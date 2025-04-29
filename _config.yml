@@ -37,6 +37,7 @@ thebe:
 html:
   use_issues_button: true
   use_repository_button: true
+  baseurl: https://raphsa.github.io/Informatica_CLASS/
 
 # Ignore files not named in _toc
 only_build_toc_files: true
