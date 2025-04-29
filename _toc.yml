@@ -1,0 +1,22 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: informatica
+chapters:
+- file: introduzione
+- file: funzioni
+- file: input
+- file: sequenze
+- file: for
+- file: while
+- file: debug
+- file: liste
+- file: ricorsione
+- file: complessita
+- file: dizionari
+- file: classi
+- file: eccezioni
+- file: Rlang
+- file: alberi
+- file: comprehension
