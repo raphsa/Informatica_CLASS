@@ -8,7 +8,7 @@ git commit -m "Message"
 git push origin master
 ```
 
-In case of problem in correctly visualize the Jupyter Book:
+In case of problems in correctly visualize the Jupyter Book:
 
 ```bash
 touch docs/.nojekyll
