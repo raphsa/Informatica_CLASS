@@ -7,3 +7,12 @@ git add .
 git commit -m "Message"
 git push origin master
 ```
+
+In case of problem in correctly visualize the Jupyter Book:
+
+```bash
+touch docs/.nojekyll
+git add docs/.nojekyll
+git commit -m "Add .nojekyll to disable Jekyll and fix styling"
+git push origin master
+```
