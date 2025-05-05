@@ -25,6 +25,8 @@ Slide di teoria sulla selezione e sugli input:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulla selezione e sugli input:
 
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836021" target="_blank" style="text-decoration: none;">

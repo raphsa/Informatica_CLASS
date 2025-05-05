@@ -25,6 +25,8 @@ Slide di teoria sul linguaggio R:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sul linguaggio R:
 
 <a href="" target="_blank" style="text-decoration: none;">

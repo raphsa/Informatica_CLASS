@@ -412,7 +412,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -428,6 +430,29 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-1">Esercizio di lettura 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-2">Esercizio di lettura 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-3">Esercizio di lettura 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-da-svolgere">Esercizi da svolgere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio">1° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6° esercizio:</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -447,12 +472,227 @@ document.write(`
     <small>slide del professore da Virtuale</small>
   </div>
 </a>
+<div style="margin-top: 20px;"></div>
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836007" target="_blank" style="text-decoration: none;">
   <div style="border: 2px solid #ddd; padding: 16px; border-radius: 10px; background-color: #f0f8ff; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
     📎 <strong>Introduzione al laboratorio</strong><br>
     <small>slide del professore da Virtuale</small>
   </div>
-</a></section>
+</a>
+<section id="esercizi">
+<h2>Esercizi<a class="headerlink" href="#esercizi" title="Link to this heading">#</a></h2>
+<p>Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzare con il linguaggio Python:</p>
+<section id="esercizio-di-lettura-1">
+<h3>Esercizio di lettura 1:<a class="headerlink" href="#esercizio-di-lettura-1" title="Link to this heading">#</a></h3>
+<div class="cell tag_thebe-run docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;ciao&quot;</span>
+<span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;mondo&quot;</span>
+<span class="n">aeb</span> <span class="o">=</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(aeb)</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q1_intro', 'ciaomondo', 'feedback1_intro')">
+  <input type="radio" name="q1_intro" value="ciao mondo"> ciao mondo<br>
+  <input type="radio" name="q1_intro" value="ciao+mondo"> ciao+mondo<br>
+  <input type="radio" name="q1_intro" value="ciaomondo"> ciaomondo<br>
+  <input type="radio" name="q1_intro" value="ciao,mondo"> ciao,mondo<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_intro', 'feedback1_intro')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback1_intro"></p>
+<script>
+function checkAnswer(event, groupName, correctValue, feedbackID) {
+  event.preventDefault();
+  const choices = document.getElementsByName(groupName);
+  let selected = null;
+  for (const choice of choices) {
+    if (choice.checked) {
+      selected = choice.value;
+      break;
+    }
+  }
+
+  const feedback = document.getElementById(feedbackID);
+  if (selected === correctValue) {
+    feedback.innerHTML = "✅ Corretto!";
+  } else if (selected) {
+    feedback.innerHTML = "❌ Sbagliato. Riprova.";
+  } else {
+    feedback.innerHTML = "⚠️ Seleziona una risposta prima di verificare.";
+  }
+}
+
+function resetQuiz(groupName, feedbackID) {
+  const choices = document.getElementsByName(groupName);
+  for (const choice of choices) {
+    choice.checked = false;
+  }
+  document.getElementById(feedbackID).innerHTML = "";
+}
+</script>
+</section>
+<section id="esercizio-di-lettura-2">
+<h3>Esercizio di lettura 2:<a class="headerlink" href="#esercizio-di-lettura-2" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;ciao&quot;</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span> 
+<span class="n">aperb</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(aperb)</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q2_intro', 'ciaociaociaociaociao', 'feedback2_intro')">
+  <input type="radio" name="q2_intro" value="5ciao"> 5ciao<br>
+  <input type="radio" name="q2_intro" value="ccccciiiiiaaaaaooooo"> ccccciiiiiaaaaaooooo<br>
+  <input type="radio" name="q2_intro" value="ciaociaociaociaociao"> ciaociaociaociaociao<br>
+  <input type="radio" name="q2_intro" value="cinqueciao"> cinqueciao<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_intro', 'feedback2_intro')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback2_intro"></p>
+</section>
+<section id="esercizio-di-lettura-3">
+<h3>Esercizio di lettura 3:<a class="headerlink" href="#esercizio-di-lettura-3" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span> 
+<span class="n">area</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="n">b</span>
+<span class="n">perimetro</span> <span class="o">=</span> <span class="n">a</span><span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">*</span><span class="mi">2</span> 
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(area,</span> <span class="pre">perimetro)</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q3_intro', '6 10', 'feedback3_intro')">
+  <input type="radio" name="q3_intro" value="6, 10"> 6, 10<br>
+  <input type="radio" name="q3_intro" value="6 10"> 6 10<br>
+  <input type="radio" name="q3_intro" value="23, 14"> 23, 14<br>
+  <input type="radio" name="q3_intro" value="ab, a2b2"> ab, a2b2<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_intro', 'feedback3_intro')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback3_intro"></p>
+</section>
+<section id="esercizio-di-lettura-4">
+<h3>Esercizio di lettura 4:<a class="headerlink" href="#esercizio-di-lettura-4" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">42</span> 
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span> 
+<span class="n">a</span> <span class="o">=</span> <span class="mi">13</span> 
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>13 42
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(a,</span> <span class="pre">b)</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q4_intro', '13 42', 'feedback4_intro')">
+  <input type="radio" name="q4_intro" value="42, 13"> 42, 13<br>
+  <input type="radio" name="q4_intro" value="13 42"> 13 42<br>
+  <input type="radio" name="q4_intro" value="42 13"> 42 13<br>
+  <input type="radio" name="q4_intro" value="13 a"> 13 a<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_intro', 'feedback4_intro')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback4_intro"></p>
+</section>
+</section>
+<section id="esercizi-da-svolgere">
+<h2>Esercizi da svolgere<a class="headerlink" href="#esercizi-da-svolgere" title="Link to this heading">#</a></h2>
+<section id="esercizio">
+<h3>1° esercizio:<a class="headerlink" href="#esercizio" title="Link to this heading">#</a></h3>
+<p>Scrivere un programma che stampa il perimetro di un quadrato avente il lato <code class="docutils literal notranslate"><span class="pre">l</span> <span class="pre">=</span> <span class="pre">3</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id1">
+<h3>2° esercizio:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Scrivere un programma che stampa <code class="docutils literal notranslate"><span class="pre">n</span></code> volte una stringa <code class="docutils literal notranslate"><span class="pre">s</span></code> a piacere (es. con <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">&quot;ciao&quot;</span></code> stamperà ciaociaociaociao)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id2">
+<h3>3° esercizio:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Scrivere un programma che stampa il volume di una sfera avente raggio <code class="docutils literal notranslate"><span class="pre">r</span></code> a piacere. Importare il valore di Pi greco dal modulo <code class="docutils literal notranslate"><span class="pre">math</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">r</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id3">
+<h3>4° esercizio:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scelta a piacere (es. se <code class="docutils literal notranslate"><span class="pre">s=&quot;lodi&quot;</span></code>, il programma stampa idol).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;lodi&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id4">
+<h3>5° esercizio:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Supponete di correre 10 km in 42 min e 42 sec. Scrivere un programma che stampa la vostra velocità media in km/minuto, km/h, miglia/minuto e miglia/h.</p>
+<ul class="simple">
+<li><p>Calcolate quanti secondi ci sono in 42 minuti e 42 secondi.</p></li>
+<li><p>A quante miglia corrispondono 10km? (un miglio corrisponde a 1.61 km)</p></li>
+<li><p>La vostra velocità media è calcolata come distanza/tempo.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">secondi</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="id5">
+<h3>6° esercizio:<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Scrivere un programma che scambia i valori (scelti a piacere) legati ai due nomi <code class="docutils literal notranslate"><span class="pre">a</span></code> e <code class="docutils literal notranslate"><span class="pre">b</span></code> (deve funzionare per ogni valore iniziale di <code class="docutils literal notranslate"><span class="pre">a</span></code> e <code class="docutils literal notranslate"><span class="pre">b</span></code>). Es. se inizialmente <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">=</span> <span class="pre">7</span></code> e <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">=</span> <span class="pre">20</span></code>, alla fine <code class="docutils literal notranslate"><span class="pre">print(a,b)</span></code> stamperà 20 7.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -508,6 +748,36 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-1">Esercizio di lettura 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-2">Esercizio di lettura 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-3">Esercizio di lettura 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-da-svolgere">Esercizi da svolgere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio">1° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">3° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">4° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">5° esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">6° esercizio:</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

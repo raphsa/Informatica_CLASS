@@ -25,12 +25,16 @@ Slide di teoria sugli alberi:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 <a href="" target="_blank" style="text-decoration: none;">
   <div style="border: 2px solid #ddd; padding: 16px; border-radius: 10px; background-color: #f0f8ff; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
     📎 <strong>Teoria sugli alberi: visite di alberi binari</strong><br>
     <small>slide del professore da Virtuale</small>
   </div>
 </a>
+
+<div style="margin-top: 20px;"></div>
 
 Esercizi sugli alberi:
 

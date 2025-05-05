@@ -65,6 +65,8 @@ Slide di teoria sulle funzioni:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulle funzioni:
 
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836012" target="_blank" style="text-decoration: none;">
@@ -74,8 +76,161 @@ Esercizi sulle funzioni:
   </div>
 </a>
 
+## Esercizi
+
+Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzare con l'utilizzo delle funzioni nel linguaggio Python:
+
+###### Esercizio di lettura 1:
+```{code-cell}
+:tags: [thebe-run]
+
+def moltiplic_stringa(stringa):
+  risultato = stringa*4
+  return risultato
+```
+
+Cosa restituisce il comando `print(moltiplic_stringa("prova"))`?
+
+<form onsubmit="checkAnswer(event, 'q1_funz', 'provaprovaprovaprova', 'feedback1_funz')">
+  <input type="radio" name="q1_funz" value="Errore"> Errore<br>
+  <input type="radio" name="q1_funz" value="prova4"> prova4<br>
+  <input type="radio" name="q1_funz" value="provaprovaprovaprova"> provaprovaprovaprova<br>
+  <input type="radio" name="q1_funz" value="risultato"> risultato<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback1_funz"></p>
+
+<script>
+function checkAnswer(event, groupName, correctValue, feedbackID) {
+  event.preventDefault();
+  const choices = document.getElementsByName(groupName);
+  let selected = null;
+  for (const choice of choices) {
+    if (choice.checked) {
+      selected = choice.value;
+      break;
+    }
+  }
+
+  const feedback = document.getElementById(feedbackID);
+  if (selected === correctValue) {
+    feedback.innerHTML = "✅ Corretto!";
+  } else if (selected) {
+    feedback.innerHTML = "❌ Sbagliato. Riprova.";
+  } else {
+    feedback.innerHTML = "⚠️ Seleziona una risposta prima di verificare.";
+  }
+}
+
+function resetQuiz(groupName, feedbackID) {
+  const choices = document.getElementsByName(groupName);
+  for (const choice of choices) {
+    choice.checked = false;
+  }
+  document.getElementById(feedbackID).innerHTML = "";
+}
+</script>
+
+
+
+
+###### Esercizio di lettura 2:
+```{code-cell}
+def funz_decina(numero):
+  risultato = numero + 10
+  return "risultato"
+```
+
+Cosa restituisce il comando `print(funz_decina(5))`?
+
+<form onsubmit="checkAnswer(event, 'q2_funz', 'risultato', 'feedback2_funz')">
+  <input type="radio" name="q2_funz" value="50"> 50<br>
+  <input type="radio" name="q2_funz" value="15"> 15<br>
+  <input type="radio" name="q2_funz" value="510"> 510<br>
+  <input type="radio" name="q2_funz" value="risultato"> risultato<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback2_funz"></p>
+
+###### Esercizio di lettura 3:
+```{code-cell}
+def somma_elem(elemento1, elemento2):
+  risultato = elemento1+elemento2
+  return risultato
+```
+
+Cosa restituisce il comando `print(somma_elem("elemento2", "3"))`?
+
+<form onsubmit="checkAnswer(event, 'q3_funz', 'elemento23', 'feedback3_funz')">
+  <input type="radio" name="q3_funz" value="elemento23"> elemento23<br>
+  <input type="radio" name="q3_funz" value="elemento2elemento2elemento2"> elemento2elemento2elemento2<br>
+  <input type="radio" name="q3_funz" value="elemento2+3"> elemento2+3<br>
+  <input type="radio" name="q3_funz" value="3elemento2"> 3elemento2<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback3_funz"></p>
+
+###### Esercizio di lettura 4:
+```{code-cell}
+def divisione(x, y):
+  zero = x/y
+  return 0
+```
+
+Cosa restituisce il comando `print(divisione(8, 4))`?
+
+<form onsubmit="checkAnswer(event, 'q4_funz', '0', 'feedback4_funz')">
+  <input type="radio" name="q4_funz" value="2"> 2<br>
+  <input type="radio" name="q4_funz" value="due"> due<br>
+  <input type="radio" name="q4_funz" value="0"> 0<br>
+  <input type="radio" name="q4_funz" value="zero"> zero<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback4_funz"></p>
+
+
+
 ## Esercizi svolti in aula
 
 ## Esercizi aggiuntivi
 
 ## Trova l'errore
+
+<button id="show-btn" style="background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='block'; document.getElementById('show-btn').style.display='none'; document.getElementById('hide-btn').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-btn" style="display:none; background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='none'; document.getElementById('show-btn').style.display='inline'; document.getElementById('hide-btn').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-container" style="display:none;">
+
+```{code-cell}
+:tags: [thebe-run, remove-input]
+
+print("Ciao, questo è l'output")
+```
+</div>

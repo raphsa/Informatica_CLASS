@@ -436,6 +436,13 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-utili">Link utili</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-1">Esercizio di lettura 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-2">Esercizio di lettura 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-3">Esercizio di lettura 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>
@@ -501,6 +508,7 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
     <small>slide del professore da Virtuale</small>
   </div>
 </a>
+<div style="margin-top: 20px;"></div>
 <p>Esercizi sulle funzioni:</p>
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836012" target="_blank" style="text-decoration: none;">
   <div style="border: 2px solid #ddd; padding: 16px; border-radius: 10px; background-color: #f0f8ff; text-align: center; box-shadow: 2px 2px 5px rgba(0,0,0,0.1);">
@@ -508,6 +516,136 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
     <small>slide del professore da Virtuale</small>
   </div>
 </a>
+</section>
+<section id="esercizi">
+<h2>Esercizi<a class="headerlink" href="#esercizi" title="Link to this heading">#</a></h2>
+<p>Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzare con l’utilizzo delle funzioni nel linguaggio Python:</p>
+<section id="esercizio-di-lettura-1">
+<h3>Esercizio di lettura 1:<a class="headerlink" href="#esercizio-di-lettura-1" title="Link to this heading">#</a></h3>
+<div class="cell tag_thebe-run docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">moltiplic_stringa</span><span class="p">(</span><span class="n">stringa</span><span class="p">):</span>
+  <span class="n">risultato</span> <span class="o">=</span> <span class="n">stringa</span><span class="o">*</span><span class="mi">4</span>
+  <span class="k">return</span> <span class="n">risultato</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(moltiplic_stringa(&quot;prova&quot;))</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q1_funz', 'provaprovaprovaprova', 'feedback1_funz')">
+  <input type="radio" name="q1_funz" value="Errore"> Errore<br>
+  <input type="radio" name="q1_funz" value="prova4"> prova4<br>
+  <input type="radio" name="q1_funz" value="provaprovaprovaprova"> provaprovaprovaprova<br>
+  <input type="radio" name="q1_funz" value="risultato"> risultato<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback1_funz"></p>
+<script>
+function checkAnswer(event, groupName, correctValue, feedbackID) {
+  event.preventDefault();
+  const choices = document.getElementsByName(groupName);
+  let selected = null;
+  for (const choice of choices) {
+    if (choice.checked) {
+      selected = choice.value;
+      break;
+    }
+  }
+
+  const feedback = document.getElementById(feedbackID);
+  if (selected === correctValue) {
+    feedback.innerHTML = "✅ Corretto!";
+  } else if (selected) {
+    feedback.innerHTML = "❌ Sbagliato. Riprova.";
+  } else {
+    feedback.innerHTML = "⚠️ Seleziona una risposta prima di verificare.";
+  }
+}
+
+function resetQuiz(groupName, feedbackID) {
+  const choices = document.getElementsByName(groupName);
+  for (const choice of choices) {
+    choice.checked = false;
+  }
+  document.getElementById(feedbackID).innerHTML = "";
+}
+</script>
+</section>
+<section id="esercizio-di-lettura-2">
+<h3>Esercizio di lettura 2:<a class="headerlink" href="#esercizio-di-lettura-2" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">funz_decina</span><span class="p">(</span><span class="n">numero</span><span class="p">):</span>
+  <span class="n">risultato</span> <span class="o">=</span> <span class="n">numero</span> <span class="o">+</span> <span class="mi">10</span>
+  <span class="k">return</span> <span class="s2">&quot;risultato&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(funz_decina(5))</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q2_funz', 'risultato', 'feedback2_funz')">
+  <input type="radio" name="q2_funz" value="50"> 50<br>
+  <input type="radio" name="q2_funz" value="15"> 15<br>
+  <input type="radio" name="q2_funz" value="510"> 510<br>
+  <input type="radio" name="q2_funz" value="risultato"> risultato<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback2_funz"></p>
+</section>
+<section id="esercizio-di-lettura-3">
+<h3>Esercizio di lettura 3:<a class="headerlink" href="#esercizio-di-lettura-3" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">somma_elem</span><span class="p">(</span><span class="n">elemento1</span><span class="p">,</span> <span class="n">elemento2</span><span class="p">):</span>
+  <span class="n">risultato</span> <span class="o">=</span> <span class="n">elemento1</span><span class="o">+</span><span class="n">elemento2</span>
+  <span class="k">return</span> <span class="n">risultato</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(somma_elem(&quot;elemento2&quot;,</span> <span class="pre">&quot;3&quot;))</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q3_funz', 'elemento23', 'feedback3_funz')">
+  <input type="radio" name="q3_funz" value="elemento23"> elemento23<br>
+  <input type="radio" name="q3_funz" value="elemento2elemento2elemento2"> elemento2elemento2elemento2<br>
+  <input type="radio" name="q3_funz" value="elemento2+3"> elemento2+3<br>
+  <input type="radio" name="q3_funz" value="3elemento2"> 3elemento2<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback3_funz"></p>
+</section>
+<section id="esercizio-di-lettura-4">
+<h3>Esercizio di lettura 4:<a class="headerlink" href="#esercizio-di-lettura-4" title="Link to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">divisione</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="n">zero</span> <span class="o">=</span> <span class="n">x</span><span class="o">/</span><span class="n">y</span>
+  <span class="k">return</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Cosa restituisce il comando <code class="docutils literal notranslate"><span class="pre">print(divisione(8,</span> <span class="pre">4))</span></code>?</p>
+<form onsubmit="checkAnswer(event, 'q4_funz', '0', 'feedback4_funz')">
+  <input type="radio" name="q4_funz" value="2"> 2<br>
+  <input type="radio" name="q4_funz" value="due"> due<br>
+  <input type="radio" name="q4_funz" value="0"> 0<br>
+  <input type="radio" name="q4_funz" value="zero"> zero<br>
+  <br>
+  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
+  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback4_funz"></p>
+</section>
 </section>
 <section id="esercizi-svolti-in-aula">
 <h2>Esercizi svolti in aula<a class="headerlink" href="#esercizi-svolti-in-aula" title="Link to this heading">#</a></h2>
@@ -517,7 +655,21 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
 </section>
 <section id="trova-l-errore">
 <h2>Trova l’errore<a class="headerlink" href="#trova-l-errore" title="Link to this heading">#</a></h2>
-</section>
+<button id="show-btn" style="background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='block'; document.getElementById('show-btn').style.display='none'; document.getElementById('hide-btn').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-btn" style="display:none; background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='none'; document.getElementById('show-btn').style.display='inline'; document.getElementById('hide-btn').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-container" style="display:none;"><div class="cell tag_thebe-run tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciao, questo è l&#39;output
+</pre></div>
+</div>
+</div>
+</div>
+</div></section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -585,6 +737,13 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#link-utili">Link utili</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi">Esercizi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-1">Esercizio di lettura 1:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-2">Esercizio di lettura 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-3">Esercizio di lettura 3:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>

@@ -25,6 +25,8 @@ Slide di teoria sui dizionari:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sui dizionari:
 
 <a href="" target="_blank" style="text-decoration: none;">

@@ -25,6 +25,8 @@ Slide di teoria sul ciclo while:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sul ciclo while:
 
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836062" target="_blank" style="text-decoration: none;">

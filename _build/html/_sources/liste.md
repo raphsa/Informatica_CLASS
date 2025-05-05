@@ -25,6 +25,8 @@ Slide di teoria sulle liste:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulle liste:
 
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836067" target="_blank" style="text-decoration: none;">

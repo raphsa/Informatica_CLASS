@@ -25,6 +25,8 @@ Slide di teoria sulle sequenze:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulle sequenze:
 
 <a href="https://virtuale.unibo.it/mod/resource/view.php?id=1836032" target="_blank" style="text-decoration: none;">

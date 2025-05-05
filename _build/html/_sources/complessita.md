@@ -25,6 +25,8 @@ Slide di teoria sulla complessità computazionale:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulla complessità computazionale:
 
 <a href="" target="_blank" style="text-decoration: none;">

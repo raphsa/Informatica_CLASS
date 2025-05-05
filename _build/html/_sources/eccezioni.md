@@ -25,6 +25,8 @@ Slide di teoria sulle eccezioni:
   </div>
 </a>
 
+<div style="margin-top: 20px;"></div>
+
 Esercizi sulle eccezioni:
 
 <a href="" target="_blank" style="text-decoration: none;">
