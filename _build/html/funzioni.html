@@ -538,8 +538,8 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
   <input type="radio" name="q1_funz" value="provaprovaprovaprova"> provaprovaprovaprova<br>
   <input type="radio" name="q1_funz" value="risultato"> risultato<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
 </form>
 <div style="margin-top: 20px;"></div>
 <p id="feedback1_funz"></p>
@@ -592,8 +592,8 @@ function resetQuiz(groupName, feedbackID) {
   <input type="radio" name="q2_funz" value="510"> 510<br>
   <input type="radio" name="q2_funz" value="risultato"> risultato<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
 </form>
 <div style="margin-top: 20px;"></div>
 <p id="feedback2_funz"></p>
@@ -616,8 +616,8 @@ function resetQuiz(groupName, feedbackID) {
   <input type="radio" name="q3_funz" value="elemento2+3"> elemento2+3<br>
   <input type="radio" name="q3_funz" value="3elemento2"> 3elemento2<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
 </form>
 <div style="margin-top: 20px;"></div>
 <p id="feedback3_funz"></p>
@@ -640,8 +640,8 @@ function resetQuiz(groupName, feedbackID) {
   <input type="radio" name="q4_funz" value="0"> 0<br>
   <input type="radio" name="q4_funz" value="zero"> zero<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
 </form>
 <div style="margin-top: 20px;"></div>
 <p id="feedback4_funz"></p>
@@ -655,21 +655,7 @@ function resetQuiz(groupName, feedbackID) {
 </section>
 <section id="trova-l-errore">
 <h2>Trova l’errore<a class="headerlink" href="#trova-l-errore" title="Link to this heading">#</a></h2>
-<button id="show-btn" style="background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='block'; document.getElementById('show-btn').style.display='none'; document.getElementById('hide-btn').style.display='inline';">
-  Mostra soluzione
-</button>
-<button id="hide-btn" style="display:none; background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='none'; document.getElementById('show-btn').style.display='inline'; document.getElementById('hide-btn').style.display='none';">
-  Nascondi soluzione
-</button>
-<div style="margin-top: 20px;"></div>
-<div id="output-container" style="display:none;"><div class="cell tag_thebe-run tag_remove-input docutils container">
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Ciao, questo è l&#39;output
-</pre></div>
-</div>
-</div>
-</div>
-</div></section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">

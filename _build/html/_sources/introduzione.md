@@ -175,8 +175,27 @@ Cosa restituisce il comando `print(a, b)`?
 Scrivere un programma che stampa il perimetro di un quadrato avente il lato `l = 3`.
 
 ```{code-cell}
-l = 0
+l = 3
 ```
+
+<button id="show-intro1" style="border-radius:5px" onclick="document.getElementById('output-intro1').style.display='block'; document.getElementById('show-intro1').style.display='none'; document.getElementById('hide-intro1').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro1" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro1').style.display='none'; document.getElementById('show-intro1').style.display='inline'; document.getElementById('hide-intro1').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro1" style="display:none;">
+
+```python
+l = 3
+perimetro = 4*l
+print(perimetro)
+```
+</div>
 
 ###### 2° esercizio:
 
@@ -187,6 +206,34 @@ s = ""
 n = 0
 ```
 
+<button id="show-intro2" style="border-radius:5px" onclick="document.getElementById('output-intro2').style.display='block'; document.getElementById('show-intro2').style.display='none'; document.getElementById('hide-intro2').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro2" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro2').style.display='none'; document.getElementById('show-intro2').style.display='inline'; document.getElementById('hide-intro2').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro2" style="display:none;">
+
+```python
+s = "ciao"
+n = 4
+output = s*n
+print(output)
+```
+
+*Nel caso non si fosse interessati a conservare l'output in una variabile e si volesse effettuare un passaggio in meno:*
+
+```python
+s = "ciao"
+n = 4
+print(s*n)
+```
+</div>
+
 ###### 3° esercizio:
 
 Scrivere un programma che stampa il volume di una sfera avente raggio `r` a piacere. Importare il valore di Pi greco dal modulo `math`.
@@ -194,6 +241,38 @@ Scrivere un programma che stampa il volume di una sfera avente raggio `r` a piac
 ```{code-cell}
 r = 0
 ```
+```{tip}
+Per utilizzare il modulo `math` è necessario importarlo. Consulta la [documentazione](https://docs.python.org/3/library/math.html) per trovare il comando Pi greco.
+```
+
+<button id="show-intro3" style="border-radius:5px" onclick="document.getElementById('output-intro3').style.display='block'; document.getElementById('show-intro3').style.display='none'; document.getElementById('hide-intro3').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro3" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro3').style.display='none'; document.getElementById('show-intro3').style.display='inline'; document.getElementById('hide-intro3').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro3" style="display:none;">
+
+```python
+import math
+r = 10 #qualsiasi valore di r va bene
+volume = 4/3 * math.pi * r**3
+print(r)
+```
+
+*In alternativa, l'importazione diretta del comando `pi` può essere una soluzione, se non si ha necessità di usare altri comandi del modulo `math`:*
+
+```python
+from math import pi
+r = 10 #qualsiasi valore di r va bene
+volume = 4/3 * pi * r**3
+print(r)
+```
+</div>
 
 ###### 4° esercizio:
 
@@ -202,6 +281,25 @@ Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scel
 ```{code-cell}
 s = "lodi"
 ```
+
+<button id="show-intro4" style="border-radius:5px" onclick="document.getElementById('output-intro4').style.display='block'; document.getElementById('show-intro4').style.display='none'; document.getElementById('hide-intro4').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro4" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro4').style.display='none'; document.getElementById('show-intro4').style.display='inline'; document.getElementById('hide-intro4').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro4" style="display:none;">
+
+```python
+s = "lodi"
+print(s[::-1])
+```
+
+</div>
 
 ###### 5° esercizio:
 
@@ -214,6 +312,49 @@ Supponete di correre 10 km in 42 min e 42 sec. Scrivere un programma che stampa 
 secondi = 0
 ```
 
+<button id="show-intro5" style="border-radius:5px" onclick="document.getElementById('output-intro5').style.display='block'; document.getElementById('show-intro5').style.display='none'; document.getElementById('hide-intro5').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro5" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro5').style.display='none'; document.getElementById('show-intro5').style.display='inline'; document.getElementById('hide-intro5').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro5" style="display:none;">
+
+```python
+km = 10
+miglia = 10/1.61
+# calcolo quanti secondi corrispondono 42min e 42sec
+tempo_sec = 42*60 + 42
+tempo_min = tempo_sec/60
+tempo_hour = tempo_min/60
+vel_km_min = km/tempo_min
+vel_km_hour = km/tempo_hour
+vel_miglia_min = miglia/tempo_min
+vel_miglia_hour = miglia/tempo_hour
+print(vel_km_min, vel_km_hour, vel_miglia_min, vel_miglia_hour)
+```
+
+```{tip}
+Il risultato che si ottiene dal `print` è poco comprensibile. Per avere un `print` più chiaro, si provi a sostituire con i seguenti `print`.
+```
+
+```python
+print(f"La velocità media in km/min è: {vel_km_min} km/min")
+print(f"La velocità media in km/h è: {vel_km_hour} km/h")
+print(f"La velocità media in miglia/min è: {vel_miglia_min} miglia/min")
+print(f"La velocità media in miglia/h è: {vel_miglia_hour} miglia/h")
+```
+
+```{note}
+La lettera `f` subito dopo la prima `(` permette di inserire dinamicamente variabili all'interno di una stringa per la stampa, a patto che le variabili siano inserite dentro `{}`.
+```
+
+</div>
+
 ###### 6° esercizio:
 
 Scrivere un programma che scambia i valori (scelti a piacere) legati ai due nomi `a` e `b` (deve funzionare per ogni valore iniziale di `a` e `b`). Es. se inizialmente `a = 7` e `b = 20`, alla fine `print(a,b)` stamperà 20 7.
@@ -222,3 +363,34 @@ Scrivere un programma che scambia i valori (scelti a piacere) legati ai due nomi
 a = 0
 b = 0
 ```
+
+<button id="show-intro6" style="border-radius:5px" onclick="document.getElementById('output-intro6').style.display='block'; document.getElementById('show-intro6').style.display='none'; document.getElementById('hide-intro6').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro6" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro6').style.display='none'; document.getElementById('show-intro6').style.display='inline'; document.getElementById('hide-intro6').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro6" style="display:none;">
+
+```python
+a = 7 #qualsiasi valore di a va bene
+b = 20 #qualsiasi valore di b va bene
+a, b = b, a
+print(a, b)
+```
+
+*In alternativa, si potrebbe anche creare una terza variabile temporanea su cui appoggiare il valore di una delle due variabili durante il cambiamento. Il metodo precedente, però, è più veloce e non porta alla creazione di nessuna variabile futile.*
+
+```python
+a = 7 #qualsiasi valore di a va bene
+b = 20 #qualsiasi valore di b va bene
+c = a #si parcheggia il valore di a in c, così quando a diventa b possiamo ancora prendere il valore di a, che non si trova più in a ma solo in c
+a = b
+b = c
+print(a, b)
+```
+</div>

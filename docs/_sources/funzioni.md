@@ -97,8 +97,8 @@ Cosa restituisce il comando `print(moltiplic_stringa("prova"))`?
   <input type="radio" name="q1_funz" value="provaprovaprovaprova"> provaprovaprovaprova<br>
   <input type="radio" name="q1_funz" value="risultato"> risultato<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q1_funz', 'feedback1_funz')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -154,8 +154,8 @@ Cosa restituisce il comando `print(funz_decina(5))`?
   <input type="radio" name="q2_funz" value="510"> 510<br>
   <input type="radio" name="q2_funz" value="risultato"> risultato<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q2_funz', 'feedback2_funz')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -177,8 +177,8 @@ Cosa restituisce il comando `print(somma_elem("elemento2", "3"))`?
   <input type="radio" name="q3_funz" value="elemento2+3"> elemento2+3<br>
   <input type="radio" name="q3_funz" value="3elemento2"> 3elemento2<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q3_funz', 'feedback3_funz')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -200,8 +200,8 @@ Cosa restituisce il comando `print(divisione(8, 4))`?
   <input type="radio" name="q4_funz" value="0"> 0<br>
   <input type="radio" name="q4_funz" value="zero"> zero<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q4_funz', 'feedback4_funz')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -215,22 +215,3 @@ Cosa restituisce il comando `print(divisione(8, 4))`?
 ## Esercizi aggiuntivi
 
 ## Trova l'errore
-
-<button id="show-btn" style="background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='block'; document.getElementById('show-btn').style.display='none'; document.getElementById('hide-btn').style.display='inline';">
-  Mostra soluzione
-</button>
-
-<button id="hide-btn" style="display:none; background-color:#29313D; border-radius:5px" onclick="document.getElementById('output-container').style.display='none'; document.getElementById('show-btn').style.display='inline'; document.getElementById('hide-btn').style.display='none';">
-  Nascondi soluzione
-</button>
-
-<div style="margin-top: 20px;"></div>
-
-<div id="output-container" style="display:none;">
-
-```{code-cell}
-:tags: [thebe-run, remove-input]
-
-print("Ciao, questo è l'output")
-```
-</div>
