@@ -40,8 +40,6 @@ Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzar
 
 ###### Esercizio di lettura 1:
 ```{code-cell}
-:tags: [thebe-run]
-
 a = "ciao"
 b = "mondo"
 aeb = a+b
@@ -177,6 +175,14 @@ Scrivere un programma che stampa il perimetro di un quadrato avente il lato `l =
 ```{code-cell}
 l = 3
 ```
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 <button id="show-intro1" style="border-radius:5px" onclick="document.getElementById('output-intro1').style.display='block'; document.getElementById('show-intro1').style.display='none'; document.getElementById('hide-intro1').style.display='inline';">
   Mostra soluzione
@@ -199,12 +205,21 @@ print(perimetro)
 
 ###### 2° esercizio:
 
-Scrivere un programma che stampa `n` volte una stringa `s` a piacere (es. con `n = 4`, `s = "ciao"` stamperà ciaociaociaociao)
+Scrivere un programma che stampa `n` volte una stringa `s` a piacere (es. con `n = 4`, `s = "ciao"` stamperà `ciaociaociaociao`)
 
 ```{code-cell}
 s = ""
 n = 0
 ```
+
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 <button id="show-intro2" style="border-radius:5px" onclick="document.getElementById('output-intro2').style.display='block'; document.getElementById('show-intro2').style.display='none'; document.getElementById('hide-intro2').style.display='inline';">
   Mostra soluzione
@@ -245,6 +260,15 @@ r = 0
 Per utilizzare il modulo `math` è necessario importarlo. Consulta la [documentazione](https://docs.python.org/3/library/math.html) per trovare il comando Pi greco.
 ```
 
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
 <button id="show-intro3" style="border-radius:5px" onclick="document.getElementById('output-intro3').style.display='block'; document.getElementById('show-intro3').style.display='none'; document.getElementById('hide-intro3').style.display='inline';">
   Mostra soluzione
 </button>
@@ -276,11 +300,20 @@ print(r)
 
 ###### 4° esercizio:
 
-Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scelta a piacere (es. se `s="lodi"`, il programma stampa idol).
+Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scelta a piacere (es. se `s="lodi"`, il programma stampa `idol`).
 
 ```{code-cell}
 s = "lodi"
 ```
+
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 <button id="show-intro4" style="border-radius:5px" onclick="document.getElementById('output-intro4').style.display='block'; document.getElementById('show-intro4').style.display='none'; document.getElementById('hide-intro4').style.display='inline';">
   Mostra soluzione
@@ -311,6 +344,15 @@ Supponete di correre 10 km in 42 min e 42 sec. Scrivere un programma che stampa 
 ```{code-cell}
 secondi = 0
 ```
+
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 <button id="show-intro5" style="border-radius:5px" onclick="document.getElementById('output-intro5').style.display='block'; document.getElementById('show-intro5').style.display='none'; document.getElementById('hide-intro5').style.display='inline';">
   Mostra soluzione
@@ -363,6 +405,15 @@ Scrivere un programma che scambia i valori (scelti a piacere) legati ai due nomi
 a = 0
 b = 0
 ```
+
+Partendo dal codice sopra, prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 <button id="show-intro6" style="border-radius:5px" onclick="document.getElementById('output-intro6').style.display='block'; document.getElementById('show-intro6').style.display='none'; document.getElementById('hide-intro6').style.display='inline';">
   Mostra soluzione
