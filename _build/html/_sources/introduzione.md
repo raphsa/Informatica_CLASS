@@ -53,8 +53,8 @@ Cosa restituisce il comando `print(aeb)`?
   <input type="radio" name="q1_intro" value="ciaomondo"> ciaomondo<br>
   <input type="radio" name="q1_intro" value="ciao,mondo"> ciao,mondo<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q1_intro', 'feedback1_intro')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q1_intro', 'feedback1_intro')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -110,8 +110,8 @@ Cosa restituisce il comando `print(aperb)`?
   <input type="radio" name="q2_intro" value="ciaociaociaociaociao"> ciaociaociaociaociao<br>
   <input type="radio" name="q2_intro" value="cinqueciao"> cinqueciao<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q2_intro', 'feedback2_intro')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q2_intro', 'feedback2_intro')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -134,8 +134,8 @@ Cosa restituisce il comando `print(area, perimetro)`?
   <input type="radio" name="q3_intro" value="23, 14"> 23, 14<br>
   <input type="radio" name="q3_intro" value="ab, a2b2"> ab, a2b2<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q3_intro', 'feedback3_intro')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q3_intro', 'feedback3_intro')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
@@ -158,8 +158,8 @@ Cosa restituisce il comando `print(a, b)`?
   <input type="radio" name="q4_intro" value="42 13"> 42 13<br>
   <input type="radio" name="q4_intro" value="13 a"> 13 a<br>
   <br>
-  <input type="submit" value="Verifica" style="background-color:#29313D; border-radius:5px">
-  <button type="button" style="background-color:#29313D; border-radius:5px" onclick="resetQuiz('q4_intro', 'feedback4_intro')">Reset</button>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q4_intro', 'feedback4_intro')">Reset</button>
 </form>
 
 <div style="margin-top: 20px;"></div>
