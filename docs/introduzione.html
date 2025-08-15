@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -238,37 +238,6 @@
 
 
 
-<div class="dropdown dropdown-launch-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
-    <i class="fas fa-rocket"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li>
-<button onclick="initThebeSBT()"
-  class="btn btn-sm btn-launch-thebe dropdown-item"
-  title="Launch Thebe"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-play"></i>
-  </span>
-<span class="btn__text-container">Live Code</span>
-</button>
-</li>
-      
-  </ul>
-</div>
-
-
-
-
-
-
 <div class="dropdown dropdown-source-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
     <i class="fab fa-github"></i>
@@ -321,23 +290,6 @@
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="_sources/introduzione.ipynb" target="_blank"
-   class="btn btn-sm btn-download-notebook-button dropdown-item"
-   title="Download notebook file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-code"></i>
-  </span>
-<span class="btn__text-container">.ipynb</span>
-</a>
-</li>
-      
       
       
       
@@ -484,7 +436,7 @@ document.write(`
 <p>Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzare con il linguaggio Python:</p>
 <section id="esercizio-di-lettura-1">
 <h3>Esercizio di lettura 1:<a class="headerlink" href="#esercizio-di-lettura-1" title="Link to this heading">#</a></h3>
-<div class="cell tag_thebe-run docutils container">
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;ciao&quot;</span>
 <span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;mondo&quot;</span>
@@ -628,6 +580,13 @@ function resetQuiz(groupName, feedbackID) {
 </div>
 </div>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro1" style="border-radius:5px" onclick="document.getElementById('output-intro1').style.display='block'; document.getElementById('show-intro1').style.display='none'; document.getElementById('hide-intro1').style.display='inline';">
   Mostra soluzione
 </button>
@@ -645,7 +604,7 @@ function resetQuiz(groupName, feedbackID) {
 </section>
 <section id="id1">
 <h3>2° esercizio:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
-<p>Scrivere un programma che stampa <code class="docutils literal notranslate"><span class="pre">n</span></code> volte una stringa <code class="docutils literal notranslate"><span class="pre">s</span></code> a piacere (es. con <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">&quot;ciao&quot;</span></code> stamperà ciaociaociaociao)</p>
+<p>Scrivere un programma che stampa <code class="docutils literal notranslate"><span class="pre">n</span></code> volte una stringa <code class="docutils literal notranslate"><span class="pre">s</span></code> a piacere (es. con <code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">=</span> <span class="pre">4</span></code>, <code class="docutils literal notranslate"><span class="pre">s</span> <span class="pre">=</span> <span class="pre">&quot;ciao&quot;</span></code> stamperà <code class="docutils literal notranslate"><span class="pre">ciaociaociaociao</span></code>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
@@ -654,6 +613,13 @@ function resetQuiz(groupName, feedbackID) {
 </div>
 </div>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro2" style="border-radius:5px" onclick="document.getElementById('output-intro2').style.display='block'; document.getElementById('show-intro2').style.display='none'; document.getElementById('hide-intro2').style.display='inline';">
   Mostra soluzione
 </button>
@@ -690,6 +656,13 @@ function resetQuiz(groupName, feedbackID) {
 <p class="admonition-title">Tip</p>
 <p>Per utilizzare il modulo <code class="docutils literal notranslate"><span class="pre">math</span></code> è necessario importarlo. Consulta la <a class="reference external" href="https://docs.python.org/3/library/math.html">documentazione</a> per trovare il comando Pi greco.</p>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro3" style="border-radius:5px" onclick="document.getElementById('output-intro3').style.display='block'; document.getElementById('show-intro3').style.display='none'; document.getElementById('hide-intro3').style.display='inline';">
   Mostra soluzione
 </button>
@@ -715,7 +688,7 @@ function resetQuiz(groupName, feedbackID) {
 </section>
 <section id="id3">
 <h3>4° esercizio:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
-<p>Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scelta a piacere (es. se <code class="docutils literal notranslate"><span class="pre">s=&quot;lodi&quot;</span></code>, il programma stampa idol).</p>
+<p>Scrivere un programma che stampa al contrario una stringa lunga 4 caratteri scelta a piacere (es. se <code class="docutils literal notranslate"><span class="pre">s=&quot;lodi&quot;</span></code>, il programma stampa <code class="docutils literal notranslate"><span class="pre">idol</span></code>).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;lodi&quot;</span>
@@ -723,6 +696,13 @@ function resetQuiz(groupName, feedbackID) {
 </div>
 </div>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro4" style="border-radius:5px" onclick="document.getElementById('output-intro4').style.display='block'; document.getElementById('show-intro4').style.display='none'; document.getElementById('hide-intro4').style.display='inline';">
   Mostra soluzione
 </button>
@@ -752,6 +732,13 @@ function resetQuiz(groupName, feedbackID) {
 </div>
 </div>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro5" style="border-radius:5px" onclick="document.getElementById('output-intro5').style.display='block'; document.getElementById('show-intro5').style.display='none'; document.getElementById('hide-intro5').style.display='inline';">
   Mostra soluzione
 </button>
@@ -800,6 +787,13 @@ function resetQuiz(groupName, feedbackID) {
 </div>
 </div>
 </div>
+<p>Partendo dal codice sopra, prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
 <button id="show-intro6" style="border-radius:5px" onclick="document.getElementById('output-intro6').style.display='block'; document.getElementById('show-intro6').style.display='none'; document.getElementById('hide-intro6').style.display='inline';">
   Mostra soluzione
 </button>
@@ -831,7 +825,7 @@ function resetQuiz(groupName, feedbackID) {
     {
         requestKernel: true,
         binderOptions: {
-            repo: "executablebooks/jupyter-book",
+            repo: "binder-examples/jupyter-stacks-datascience",
             ref: "master",
         },
         codeMirrorConfig: {
