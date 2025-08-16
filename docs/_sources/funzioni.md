@@ -262,7 +262,7 @@ Abituatevi a utilizzare i **nomi di funzione** e **l'ordine dei parametri** che 
 ```
 
 ```{tip}
-Quando create una funzione, è bene sempre fare tante stampe di test, in modo da comprendere il comportamento di una funzione nel maggior numero di casi possibili, per valutare la correttezza della funzione in tutti i possibili scenari.
+Quando create una funzione, è sempre bene fare tante stampe di test, in modo da comprendere il comportamento di una funzione nel maggior numero di casi possibili, per valutare la correttezza della funzione in tutti i possibili scenari.
 ```
 
 Prova a risolvere l'esercizio:
