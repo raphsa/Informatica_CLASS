@@ -19,6 +19,7 @@ In Python, la definizione di una funzione parte da 5 semplici componenti. Nella 
 - nome che si decide di assegnare alla funzione,
 - parametri che caratterizzano una funzione, dentro una parentesi tonda e separati da virgola,
 - i `:` alla fine della riga, per poter procedere con il corpo della funzione, costituito da uno o più comandi
+
 Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando un rientro verso destra), deve essere indicato:
 - il comando `return`, seguito dall'espressione o risultato che si vuole venga restituita quando si chiama la funzione.
 
@@ -31,7 +32,7 @@ def <nome funzione>(<parametro1>,<parametro2>):
 
 L'utilità di una funzione sta nel potere applicare una serie di comandi a tanti diversi oggetti (ad esempio, potremmo volere trovare il quadruplo di diversi numeri). Il ruolo dei parametri è proprio questo: comportarsi come una variabile, a cui ogni volta si assegna un valore a nostra discrezione.
 
-Di seguito, un esempio su come si potrebbe sviluppare la funzione, che chiameremo quadr, per generare il quadruplo di un numero:
+Di seguito, un esempio su come si potrebbe sviluppare la funzione, che chiameremo `quadr`, per generare il quadruplo di un numero:
 
 ```python
 def quadr(x):
@@ -41,11 +42,17 @@ def quadr(x):
 
 In questo modo, per ogni valore che decidiamo di verificare, la funzione ci restituirà il valore di `q`, che altro non è che il quadruplo del nostro numero.
 
-Di seguito, prova tu stesso giocando con diversi numeri! (Premi il tasto **run**) 
+Di seguito, prova tu stesso giocando con diversi numeri! 
+
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui e copia il codice seguente</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
 
 ```{code-cell}
-:tags: [thebe-run]
-
 # NON MODIFICARE LA FUNZIONE, MA SOLO IL NUMERO ALL'INTERNO DI print()
 def quadr(x):
     q = 4*x
@@ -82,8 +89,6 @@ Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzar
 
 ###### Esercizio di lettura 1:
 ```{code-cell}
-:tags: [thebe-run]
-
 def moltiplic_stringa(stringa):
   risultato = stringa*4
   return risultato
@@ -135,8 +140,6 @@ function resetQuiz(groupName, feedbackID) {
   document.getElementById(feedbackID).innerHTML = "";
 }
 </script>
-
-
 
 
 ###### Esercizio di lettura 2:
@@ -212,6 +215,84 @@ Cosa restituisce il comando `print(divisione(8, 4))`?
 
 ## Esercizi svolti in aula
 
+###### 1° Esercizio:
+
+Scrivere una funzione `esponenziale_random(x,y)` che prende come parametri due numeri interi, genera un numero intero random `r ∈ [x,y]` e poi restituisce <code>e<sup>r</sup></code>.
+
+```{note}
+Usa la funzione `e` del modulo `math` e la funzione `randint` del modulo `random`.
+```
+
+Prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
+<button id="show-intro6" style="border-radius:5px" onclick="document.getElementById('output-intro6').style.display='block'; document.getElementById('show-intro6').style.display='none'; document.getElementById('hide-intro6').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro6" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro6').style.display='none'; document.getElementById('show-intro6').style.display='inline'; document.getElementById('hide-intro6').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro6" style="display:none;">
+
+```python
+from random import randint
+from math import e
+
+def esponenziale_random(x,y):
+  r = randint(x,y)
+  return e(r)
+```
+
+###### 2° Esercizio:
+
+Scrivere una funzione `minuti_totali` che prende come parametri tre numeri interi che rappresentano, nell'ordine, `giorni`, `ore` e `minuti` e restituisce il numero totale di minuti in essi.
+
+```{note}
+Abituatevi a utilizzare i **nomi di funzione** e **l'ordine dei parametri** che vengono suggeriti: è fondamentale per la correzione automatica.
+```
+
+```{tip}
+Quando create una funzione, è bene sempre fare tante stampe di test, in modo da comprendere il comportamento di una funzione nel maggior numero di casi possibili, per valutare la correttezza della funzione in tutti i possibili scenari.
+```
+
+Prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
+<button id="show-intro7" style="border-radius:5px" onclick="document.getElementById('output-intro7').style.display='block'; document.getElementById('show-intro7').style.display='none'; document.getElementById('hide-intro7').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro7" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro7').style.display='none'; document.getElementById('show-intro7').style.display='inline'; document.getElementById('hide-intro7').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro7" style="display:none;">
+
+```python
+def minuti_totali(giorni, ore, minuti):
+  return minuti + ore*60 + giorni*24*60
+```
+
 ## Esercizi aggiuntivi
 
 ## Trova l'errore
+
+## Compiti per casa

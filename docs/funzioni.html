@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -395,9 +395,14 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° Esercizio:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiti-per-casa">Compiti per casa</a></li>
 </ul>
             </nav>
         </div>
@@ -416,8 +421,10 @@ document.write(`
 <li><p>sigla che caratterizza la funzione (<code class="docutils literal notranslate"><span class="pre">def</span></code>),</p></li>
 <li><p>nome che si decide di assegnare alla funzione,</p></li>
 <li><p>parametri che caratterizzano una funzione, dentro una parentesi tonda e separati da virgola,</p></li>
-<li><p>i <code class="docutils literal notranslate"><span class="pre">:</span></code> alla fine della riga, per poter procedere con il corpo della funzione, costituito da uno o più comandi
-Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando un rientro verso destra), deve essere indicato:</p></li>
+<li><p>i <code class="docutils literal notranslate"><span class="pre">:</span></code> alla fine della riga, per poter procedere con il corpo della funzione, costituito da uno o più comandi</p></li>
+</ul>
+<p>Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando un rientro verso destra), deve essere indicato:</p>
+<ul class="simple">
 <li><p>il comando <code class="docutils literal notranslate"><span class="pre">return</span></code>, seguito dall’espressione o risultato che si vuole venga restituita quando si chiama la funzione.</p></li>
 </ul>
 <p>Un esempio di sintassi di una funzione con due parametri, senza alcun comando al suo interno, è il seguente:</p>
@@ -426,15 +433,20 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
 </pre></div>
 </div>
 <p>L’utilità di una funzione sta nel potere applicare una serie di comandi a tanti diversi oggetti (ad esempio, potremmo volere trovare il quadruplo di diversi numeri). Il ruolo dei parametri è proprio questo: comportarsi come una variabile, a cui ogni volta si assegna un valore a nostra discrezione.</p>
-<p>Di seguito, un esempio su come si potrebbe sviluppare la funzione, che chiameremo quadr, per generare il quadruplo di un numero:</p>
+<p>Di seguito, un esempio su come si potrebbe sviluppare la funzione, che chiameremo <code class="docutils literal notranslate"><span class="pre">quadr</span></code>, per generare il quadruplo di un numero:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">quadr</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="n">q</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">x</span>
     <span class="k">return</span> <span class="n">q</span>
 </pre></div>
 </div>
 <p>In questo modo, per ogni valore che decidiamo di verificare, la funzione ci restituirà il valore di <code class="docutils literal notranslate"><span class="pre">q</span></code>, che altro non è che il quadruplo del nostro numero.</p>
-<p>Di seguito, prova tu stesso giocando con diversi numeri! (Premi il tasto <strong>run</strong>)</p>
-<div class="cell tag_thebe-run docutils container">
+<p>Di seguito, prova tu stesso giocando con diversi numeri!</p>
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui e copia il codice seguente</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># NON MODIFICARE LA FUNZIONE, MA SOLO IL NUMERO ALL&#39;INTERNO DI print()</span>
 <span class="k">def</span><span class="w"> </span><span class="nf">quadr</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -474,7 +486,7 @@ Nella riga conclusiva, indendata rispetto alla riga iniziale (quindi applicando 
 <p>Di seguito, qualche semplice esercizio di lettura per cominciare a familiarizzare con l’utilizzo delle funzioni nel linguaggio Python:</p>
 <section id="esercizio-di-lettura-1">
 <h3>Esercizio di lettura 1:<a class="headerlink" href="#esercizio-di-lettura-1" title="Link to this heading">#</a></h3>
-<div class="cell tag_thebe-run docutils container">
+<div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">moltiplic_stringa</span><span class="p">(</span><span class="n">stringa</span><span class="p">):</span>
   <span class="n">risultato</span> <span class="o">=</span> <span class="n">stringa</span><span class="o">*</span><span class="mi">4</span>
@@ -601,12 +613,77 @@ function resetQuiz(groupName, feedbackID) {
 </section>
 <section id="esercizi-svolti-in-aula">
 <h2>Esercizi svolti in aula<a class="headerlink" href="#esercizi-svolti-in-aula" title="Link to this heading">#</a></h2>
+<section id="esercizio">
+<h3>1° Esercizio:<a class="headerlink" href="#esercizio" title="Link to this heading">#</a></h3>
+<p>Scrivere una funzione <code class="docutils literal notranslate"><span class="pre">esponenziale_random(x,y)</span></code> che prende come parametri due numeri interi, genera un numero intero random <code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">∈</span> <span class="pre">[x,y]</span></code> e poi restituisce <code>e<sup>r</sup></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Usa la funzione <code class="docutils literal notranslate"><span class="pre">e</span></code> del modulo <code class="docutils literal notranslate"><span class="pre">math</span></code> e la funzione <code class="docutils literal notranslate"><span class="pre">randint</span></code> del modulo <code class="docutils literal notranslate"><span class="pre">random</span></code>.</p>
+</div>
+<p>Prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
+<button id="show-intro6" style="border-radius:5px" onclick="document.getElementById('output-intro6').style.display='block'; document.getElementById('show-intro6').style.display='none'; document.getElementById('hide-intro6').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-intro6" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro6').style.display='none'; document.getElementById('show-intro6').style.display='inline'; document.getElementById('hide-intro6').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-intro6" style="display:none;">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">randint</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">e</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">esponenziale_random</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+  <span class="n">r</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">e</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id1">
+<h3>2° Esercizio:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>Scrivere una funzione <code class="docutils literal notranslate"><span class="pre">minuti_totali</span></code> che prende come parametri tre numeri interi che rappresentano, nell’ordine, <code class="docutils literal notranslate"><span class="pre">giorni</span></code>, <code class="docutils literal notranslate"><span class="pre">ore</span></code> e <code class="docutils literal notranslate"><span class="pre">minuti</span></code> e restituisce il numero totale di minuti in essi.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Abituatevi a utilizzare i <strong>nomi di funzione</strong> e <strong>l’ordine dei parametri</strong> che vengono suggeriti: è fondamentale per la correzione automatica.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Quando create una funzione, è bene sempre fare tante stampe di test, in modo da comprendere il comportamento di una funzione nel maggior numero di casi possibili, per valutare la correttezza della funzione in tutti i possibili scenari.</p>
+</div>
+<p>Prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
+<button id="show-intro7" style="border-radius:5px" onclick="document.getElementById('output-intro7').style.display='block'; document.getElementById('show-intro7').style.display='none'; document.getElementById('hide-intro7').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-intro7" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro7').style.display='none'; document.getElementById('show-intro7').style.display='inline'; document.getElementById('hide-intro7').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-intro7" style="display:none;">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">minuti_totali</span><span class="p">(</span><span class="n">giorni</span><span class="p">,</span> <span class="n">ore</span><span class="p">,</span> <span class="n">minuti</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">minuti</span> <span class="o">+</span> <span class="n">ore</span><span class="o">*</span><span class="mi">60</span> <span class="o">+</span> <span class="n">giorni</span><span class="o">*</span><span class="mi">24</span><span class="o">*</span><span class="mi">60</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="esercizi-aggiuntivi">
 <h2>Esercizi aggiuntivi<a class="headerlink" href="#esercizi-aggiuntivi" title="Link to this heading">#</a></h2>
 </section>
 <section id="trova-l-errore">
 <h2>Trova l’errore<a class="headerlink" href="#trova-l-errore" title="Link to this heading">#</a></h2>
+</section>
+<section id="compiti-per-casa">
+<h2>Compiti per casa<a class="headerlink" href="#compiti-per-casa" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -682,9 +759,14 @@ function resetQuiz(groupName, feedbackID) {
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio-di-lettura-4">Esercizio di lettura 4:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-svolti-in-aula">Esercizi svolti in aula</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizio">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° Esercizio:</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiti-per-casa">Compiti per casa</a></li>
 </ul>
   </nav></div>
 
