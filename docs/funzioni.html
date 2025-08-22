@@ -400,9 +400,18 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° Esercizio:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiti-per-casa">Compiti per casa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3° Esercizio:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">3° Esercizio:</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -678,12 +687,163 @@ function resetQuiz(groupName, feedbackID) {
 </section>
 <section id="esercizi-aggiuntivi">
 <h2>Esercizi aggiuntivi<a class="headerlink" href="#esercizi-aggiuntivi" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h3>1° Esercizio:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<p>Scrivere una funzione <code class="docutils literal notranslate"><span class="pre">quota_persona()</span></code> che, data una spesa effettuata ed un numero di persone, restituisca la quota che ogni persona deve pagare (considerando una divisione in parti uguali e arrotondando per difetto all’intero).</p>
+<p>Prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
+<button id="show-intro8" style="border-radius:5px" onclick="document.getElementById('output-intro8').style.display='block'; document.getElementById('show-intro8').style.display='none'; document.getElementById('hide-intro8').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-intro8" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro8').style.display='none'; document.getElementById('show-intro8').style.display='inline'; document.getElementById('hide-intro8').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-intro8" style="display:none;">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">quota_persona</span><span class="p">(</span><span class="n">spesa</span><span class="p">,</span> <span class="n">n_pers</span><span class="p">):</span>
+  <span class="n">quota</span> <span class="o">=</span> <span class="n">spesa</span><span class="o">/</span><span class="n">n_pers</span>
+  <span class="k">return</span> <span class="n">quota</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>2° Esercizio:<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>Scrivere una funzione <code class="docutils literal notranslate"><span class="pre">fattoriale()</span></code> che, dato un numero intero, ne restituisca il fattoriale.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Cerca dal modulo <code class="docutils literal notranslate"><span class="pre">math</span></code> la funzione appropriata.</p>
+</div>
+<p>Prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
+<button id="show-intro9" style="border-radius:5px" onclick="document.getElementById('output-intro9').style.display='block'; document.getElementById('show-intro9').style.display='none'; document.getElementById('hide-intro9').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-intro9" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro9').style.display='none'; document.getElementById('show-intro9').style.display='inline'; document.getElementById('hide-intro9').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-intro9" style="display:none;">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">factorial</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">fattoriale</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+  <span class="n">fatt</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">fatt</span>
+</pre></div>
+</div>
+</section>
+<section id="id4">
+<h3>3° Esercizio:<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Scrivere una funzione <code class="docutils literal notranslate"><span class="pre">distanza()</span></code> che, dati 4 parametri (rappresentanti le coordinate di due punti sul piano cartesiano), ne restituisca la distanza.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Come nome dei parametri puoi usare <code class="docutils literal notranslate"><span class="pre">x1</span></code>, <code class="docutils literal notranslate"><span class="pre">y1</span></code>, <code class="docutils literal notranslate"><span class="pre">x2</span></code> e <code class="docutils literal notranslate"><span class="pre">y2</span></code>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Nel modulo <code class="docutils literal notranslate"><span class="pre">math</span></code> puoi trovare la funzione per calcolare la radice quadrata.</p>
+</div>
+<p>Prova a risolvere l’esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;"></p>
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+<div style="margin-top: 20px;"></div>
+<button id="show-intro10" style="border-radius:5px" onclick="document.getElementById('output-intro10').style.display='block'; document.getElementById('show-intro10').style.display='none'; document.getElementById('hide-intro10').style.display='inline';">
+  Mostra soluzione
+</button>
+<button id="hide-intro10" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro10').style.display='none'; document.getElementById('show-intro10').style.display='inline'; document.getElementById('hide-intro10').style.display='none';">
+  Nascondi soluzione
+</button>
+<div style="margin-top: 20px;"></div>
+<div id="output-intro10" style="display:none;">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">sqrt</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">distanza</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="n">y1</span><span class="p">,</span><span class="n">x2</span><span class="p">,</span><span class="n">y2</span><span class="p">):</span>
+  <span class="n">x_dist</span> <span class="o">=</span> <span class="n">x2</span><span class="o">-</span><span class="n">x1</span>
+  <span class="n">y_dist</span> <span class="o">=</span> <span class="n">y2</span><span class="o">-</span><span class="n">y1</span>
+  <span class="n">dist</span> <span class="o">=</span> <span class="n">sqrt</span><span class="p">(</span><span class="n">x_dist</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y_dist</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">dist</span>
+</pre></div>
+</div>
+</section>
 </section>
 <section id="trova-l-errore">
 <h2>Trova l’errore<a class="headerlink" href="#trova-l-errore" title="Link to this heading">#</a></h2>
+<p>Di seguito, verranno proposte alcune funzioni, che però presentano un errore. Riesci ad inviduarlo?</p>
+<section id="id5">
+<h3>1° Esercizio:<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">triplo</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="n">t</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span>
+    <span class="k">return</span> <span class="n">t</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">triplo</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Qual è l’errore?</p>
+<form onsubmit="checkAnswer(event, 'q5_funz', 'parametrox', 'feedback5_funz')">
+  <input type="radio" name="q5_funz" value="errore"> La funzione è stata definita erroneamente<br>
+  <input type="radio" name="q5_funz" value="print"> Non si può applicare il print ad una funzione<br>
+  <input type="radio" name="q5_funz" value="parametrox"> La variabile "x", inserita nel print, non esiste<br>
+  <input type="radio" name="q5_funz" value="letterat"> La "t" non può essere usata come variabile<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q5_funz', 'feedback5_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback5_funz"></p>
 </section>
-<section id="compiti-per-casa">
-<h2>Compiti per casa<a class="headerlink" href="#compiti-per-casa" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h3>2° Esercizio:<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">identita</span><span class="p">(</span><span class="n">nome</span><span class="p">,</span> <span class="n">cognome</span><span class="p">):</span>
+    <span class="n">pers</span> <span class="o">=</span> <span class="n">Nome</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">cognome</span>
+    <span class="k">return</span> <span class="n">pers</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">identita</span><span class="p">(</span><span class="s2">&quot;Mario&quot;</span><span class="p">,</span> <span class="s2">&quot;Rossi&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Qual è l’errore?</p>
+<form onsubmit="checkAnswer(event, 'q6_funz', 'nomesbagliato', 'feedback6_funz')">
+  <input type="radio" name="q6_funz" value="errore"> La funzione è stata definita erroneamente, con i nomi dei parametri troppo lunghi<br>
+  <input type="radio" name="q6_funz" value="nomesbagliato"> All'interno della funzione ci sono variabili che non sono state inizializzate e non corrispondono al nome dei parametri<br>
+  <input type="radio" name="q6_funz" value="stringavuota"> Non si possono fare delle stringhe composte solo da spazi vuoti<br>
+  <input type="radio" name="q6_funz" value="sommastringhe"> Non si possono sommare delle stringhe<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q6_funz', 'feedback6_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback6_funz"></p>
+</section>
+<section id="id7">
+<h3>3° Esercizio:<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">studente</span><span class="p">(</span><span class="n">anno</span><span class="p">,</span> <span class="n">scuola</span><span class="p">):</span>
+    <span class="n">pers</span> <span class="o">=</span> <span class="n">scuola</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span> <span class="o">+</span> <span class="n">anno</span> <span class="o">+</span> <span class="s2">&quot;° anno&quot;</span>
+    <span class="k">return</span> <span class="n">pers</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">studente</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s2">&quot;Ragioneria&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Qual è l’errore?</p>
+<form onsubmit="checkAnswer(event, 'q7_funz', 'sommastringhe', 'feedback7_funz')">
+  <input type="radio" name="q7_funz" value="errore"> La funzione è stata definita erroneamente, con i nomi dei parametri troppo lunghi<br>
+  <input type="radio" name="q7_funz" value="nomesbagliato"> All'interno della funzione ci sono variabili che non sono state inizializzate e non corrispondono al nome dei parametri<br>
+  <input type="radio" name="q7_funz" value="print"> Non si può applicare il print ad una funzione<br>
+  <input type="radio" name="q7_funz" value="sommastringhe"> Non si possono sommare stringhe e numeri insieme<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q7_funz', 'feedback7_funz')">Reset</button>
+</form>
+<div style="margin-top: 20px;"></div>
+<p id="feedback7_funz"></p></section>
 </section>
 </section>
 
@@ -764,9 +924,18 @@ function resetQuiz(groupName, feedbackID) {
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2° Esercizio:</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compiti-per-casa">Compiti per casa</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#esercizi-aggiuntivi">Esercizi aggiuntivi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">3° Esercizio:</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#trova-l-errore">Trova l’errore</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">2° Esercizio:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">3° Esercizio:</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

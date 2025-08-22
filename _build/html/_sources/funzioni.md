@@ -293,6 +293,194 @@ def minuti_totali(giorni, ore, minuti):
 
 ## Esercizi aggiuntivi
 
+###### 1° Esercizio:
+
+Scrivere una funzione `quota_persona()` che, data una spesa effettuata ed un numero di persone, restituisca la quota che ogni persona deve pagare (considerando una divisione in parti uguali e arrotondando per difetto all'intero).
+
+Prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
+<button id="show-intro8" style="border-radius:5px" onclick="document.getElementById('output-intro8').style.display='block'; document.getElementById('show-intro8').style.display='none'; document.getElementById('hide-intro8').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro8" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro8').style.display='none'; document.getElementById('show-intro8').style.display='inline'; document.getElementById('hide-intro8').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro8" style="display:none;">
+
+```python
+def quota_persona(spesa, n_pers):
+  quota = spesa/n_pers
+  return quota
+```
+
+###### 2° Esercizio:
+
+Scrivere una funzione `fattoriale()` che, dato un numero intero, ne restituisca il fattoriale.
+
+```{tip}
+Cerca dal modulo `math` la funzione appropriata.
+```
+
+Prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
+<button id="show-intro9" style="border-radius:5px" onclick="document.getElementById('output-intro9').style.display='block'; document.getElementById('show-intro9').style.display='none'; document.getElementById('hide-intro9').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro9" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro9').style.display='none'; document.getElementById('show-intro9').style.display='inline'; document.getElementById('hide-intro9').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro9" style="display:none;">
+
+```python
+from math import factorial
+def fattoriale(n):
+  fatt = factorial(n)
+  return fatt
+```
+
+###### 3° Esercizio:
+
+Scrivere una funzione `distanza()` che, dati 4 parametri (rappresentanti le coordinate di due punti sul piano cartesiano), ne restituisca la distanza.
+
+```{tip}
+Come nome dei parametri puoi usare `x1`, `y1`, `x2` e `y2`.
+```
+
+```{tip}
+Nel modulo `math` puoi trovare la funzione per calcolare la radice quadrata.
+```
+
+Prova a risolvere l'esercizio:
+<a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" style="text-decoration: none;">
+  <div>
+    <strong>Clicca qui per sviluppare il tuo codice!</strong><br>
+  </div>
+</a>
+
+<div style="margin-top: 20px;"></div>
+
+<button id="show-intro10" style="border-radius:5px" onclick="document.getElementById('output-intro10').style.display='block'; document.getElementById('show-intro10').style.display='none'; document.getElementById('hide-intro10').style.display='inline';">
+  Mostra soluzione
+</button>
+
+<button id="hide-intro10" style="display:none; border-radius:5px" onclick="document.getElementById('output-intro10').style.display='none'; document.getElementById('show-intro10').style.display='inline'; document.getElementById('hide-intro10').style.display='none';">
+  Nascondi soluzione
+</button>
+
+<div style="margin-top: 20px;"></div>
+
+<div id="output-intro10" style="display:none;">
+
+```python
+from math import sqrt
+def distanza(x1,y1,x2,y2):
+  x_dist = x2-x1
+  y_dist = y2-y1
+  dist = sqrt(x_dist**2 + y_dist**2)
+  return dist
+```
+
 ## Trova l'errore
 
-## Compiti per casa
+Di seguito, verranno proposte alcune funzioni, che però presentano un errore. Riesci ad inviduarlo?
+
+###### 1° Esercizio:
+
+```python
+def triplo(x):
+    t = 3*x
+    return t
+
+print(triplo(x))
+```
+
+Qual è l'errore?
+
+<form onsubmit="checkAnswer(event, 'q5_funz', 'parametrox', 'feedback5_funz')">
+  <input type="radio" name="q5_funz" value="errore"> La funzione è stata definita erroneamente<br>
+  <input type="radio" name="q5_funz" value="print"> Non si può applicare il print ad una funzione<br>
+  <input type="radio" name="q5_funz" value="parametrox"> La variabile "x", inserita nel print, non esiste<br>
+  <input type="radio" name="q5_funz" value="letterat"> La "t" non può essere usata come variabile<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q5_funz', 'feedback5_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback5_funz"></p>
+
+###### 2° Esercizio:
+
+```python
+def identita(nome, cognome):
+    pers = Nome + " " + cognome
+    return pers
+
+print(identita("Mario", "Rossi"))
+```
+
+Qual è l'errore?
+
+<form onsubmit="checkAnswer(event, 'q6_funz', 'nomesbagliato', 'feedback6_funz')">
+  <input type="radio" name="q6_funz" value="errore"> La funzione è stata definita erroneamente, con i nomi dei parametri troppo lunghi<br>
+  <input type="radio" name="q6_funz" value="nomesbagliato"> All'interno della funzione ci sono variabili che non sono state inizializzate e non corrispondono al nome dei parametri<br>
+  <input type="radio" name="q6_funz" value="stringavuota"> Non si possono fare delle stringhe composte solo da spazi vuoti<br>
+  <input type="radio" name="q6_funz" value="sommastringhe"> Non si possono sommare delle stringhe<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q6_funz', 'feedback6_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback6_funz"></p>
+
+###### 3° Esercizio:
+
+```python
+def studente(anno, scuola):
+    pers = scuola + "-" + anno + "° anno"
+    return pers
+
+print(studente(3, "Ragioneria"))
+```
+
+Qual è l'errore?
+
+<form onsubmit="checkAnswer(event, 'q7_funz', 'sommastringhe', 'feedback7_funz')">
+  <input type="radio" name="q7_funz" value="errore"> La funzione è stata definita erroneamente, con i nomi dei parametri troppo lunghi<br>
+  <input type="radio" name="q7_funz" value="nomesbagliato"> All'interno della funzione ci sono variabili che non sono state inizializzate e non corrispondono al nome dei parametri<br>
+  <input type="radio" name="q7_funz" value="print"> Non si può applicare il print ad una funzione<br>
+  <input type="radio" name="q7_funz" value="sommastringhe"> Non si possono sommare stringhe e numeri insieme<br>
+  <br>
+  <input type="submit" value="Verifica" style="border-radius:5px">
+  <button type="button" style="border-radius:5px" onclick="resetQuiz('q7_funz', 'feedback7_funz')">Reset</button>
+</form>
+
+<div style="margin-top: 20px;"></div>
+
+<p id="feedback7_funz"></p>
+
